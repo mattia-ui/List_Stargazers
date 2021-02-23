@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gKx-P1-hDK">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AqL-T3-5cX">
+            <objects>
+                <navigationController id="gKx-P1-hDK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="snb-kU-CwG">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2bQ-tr-j44"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrO-Ld-ux8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="124"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="List_Stargazers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Owner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-2p-dXG">
+                                <rect key="frame" x="36" y="233" width="181" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cec-an-5tw">
+                                <rect key="frame" x="36" y="492.33333333333326" width="318" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Lr-Hj-SA5"/>
+                                </constraints>
+                                <state key="normal" title="Search" image="SearchButton"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vms-hl-hH3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-IY-YfF">
+                                <rect key="frame" x="36" y="345.33333333333331" width="181" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare l'owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-pu-sQW">
+                                <rect key="frame" x="36" y="183" width="119" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="54e-Y6-hhz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare il repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-8G-HQi">
+                                <rect key="frame" x="36" y="306" width="152.66666666666666" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENVENUTI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qog-XX-Jt4">
+                                <rect key="frame" x="149" y="134" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PtQ-8G-HQi" firstAttribute="top" secondItem="gMY-2p-dXG" secondAttribute="bottom" constant="39" id="0oe-oN-Ell"/>
+                            <constraint firstItem="qog-XX-Jt4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="10q-BG-h1s"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PtQ-8G-HQi" secondAttribute="trailing" constant="20" symbolic="YES" id="1vf-iZ-dfB"/>
+                            <constraint firstItem="gOY-pu-sQW" firstAttribute="top" secondItem="qog-XX-Jt4" secondAttribute="bottom" constant="28" id="2yY-2Z-CZb"/>
+                            <constraint firstItem="PtQ-8G-HQi" firstAttribute="leading" secondItem="KKV-IY-YfF" secondAttribute="leading" id="7No-8g-hcK"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="trailing" secondItem="KKV-IY-YfF" secondAttribute="trailing" id="Cqz-KG-uyM"/>
+                            <constraint firstItem="KKV-IY-YfF" firstAttribute="top" secondItem="PtQ-8G-HQi" secondAttribute="bottom" constant="19" id="DYm-CN-CVv"/>
+                            <constraint firstItem="PtQ-8G-HQi" firstAttribute="leading" secondItem="gOY-pu-sQW" secondAttribute="leading" id="G5i-50-1dV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cec-an-5tw" secondAttribute="trailing" constant="20" id="LBj-gS-MlP"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="gOY-pu-sQW" secondAttribute="bottom" constant="21" id="Q6d-yo-qrB"/>
+                            <constraint firstItem="cec-an-5tw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Rbu-F9-nvb"/>
+                            <constraint firstItem="qog-XX-Jt4" firstAttribute="centerX" secondItem="KKV-IY-YfF" secondAttribute="centerX" constant="69" id="TKz-1k-zXg"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="233" id="Ubt-rz-I4N"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="leading" secondItem="gOY-pu-sQW" secondAttribute="leading" id="W7S-RY-tPa"/>
+                            <constraint firstItem="KKV-IY-YfF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="XdC-9k-wfX"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="KKV-IY-YfF" secondAttribute="trailing" id="b4u-kW-idt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gOY-pu-sQW" secondAttribute="trailing" constant="20" symbolic="YES" id="fBC-oV-0Ir"/>
+                            <constraint firstItem="cec-an-5tw" firstAttribute="top" secondItem="KKV-IY-YfF" secondAttribute="bottom" constant="112.99999999999994" id="jat-k2-Jj7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="YBJ-TX-ore"/>
+                    <connections>
+                        <outlet property="ownerTextField" destination="gMY-2p-dXG" id="7Uj-TW-gg0"/>
+                        <outlet property="repoTextField" destination="KKV-IY-YfF" id="76T-Nx-eT9"/>
+                        <outlet property="searchButton" destination="cec-an-5tw" id="mCF-Y1-W17"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.92307692307692" y="122.98578199052132"/>
+        </scene>
+        <!--Stargazers-->
+        <scene sceneID="qLt-Hh-heE">
+            <objects>
+                <tableViewController storyboardIdentifier="StargazersTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5mN-Ke-vZS" customClass="StargazersTableViewController" customModule="List_Stargazers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" id="bby-Gr-rxI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stargazerCell" rowHeight="91" id="a0X-Bh-Jlc" customClass="StargazerTableViewCell" customModule="List_Stargazers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="390" height="91"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a0X-Bh-Jlc" id="UTk-xT-qsL">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="91"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-DP-02e">
+                                            <rect key="frame" x="90" y="35.333333333333336" width="260" height="20.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldB-Cm-ZiY">
+                                            <rect key="frame" x="20" y="20.666666666666671" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="K00-MA-Wge"/>
+                                                <constraint firstAttribute="height" constant="50" id="gjZ-mk-Ob3"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rg6-DP-02e" firstAttribute="leading" secondItem="ldB-Cm-ZiY" secondAttribute="trailing" constant="20" id="Fm4-LH-qPf"/>
+                                        <constraint firstItem="ldB-Cm-ZiY" firstAttribute="leading" secondItem="UTk-xT-qsL" secondAttribute="leadingMargin" id="N3f-ho-pf7"/>
+                                        <constraint firstItem="ldB-Cm-ZiY" firstAttribute="centerY" secondItem="UTk-xT-qsL" secondAttribute="centerY" id="O0M-uO-lSj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rg6-DP-02e" secondAttribute="trailing" constant="20" id="RNC-op-H2U"/>
+                                        <constraint firstItem="rg6-DP-02e" firstAttribute="centerY" secondItem="UTk-xT-qsL" secondAttribute="centerY" id="rdL-GP-tNZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="ldB-Cm-ZiY" id="J3v-fq-Y4R"/>
+                                    <outlet property="usernameLabel" destination="rg6-DP-02e" id="vg1-Yx-iaX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5mN-Ke-vZS" id="XlH-rp-OMb"/>
+                            <outlet property="delegate" destination="5mN-Ke-vZS" id="5b9-r6-0SA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Stargazers" id="FgP-Cx-hGS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHY-aL-LqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SearchButton" width="320" height="52"/>
+    </resources>
+</document>
