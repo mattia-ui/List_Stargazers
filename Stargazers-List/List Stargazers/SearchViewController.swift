@@ -22,8 +22,8 @@ class SearchViewController: UIViewController {
     }
 
     @IBAction func searchButtonTapped(_ sender: Any) {
-        guard let owner = ownerTextField?.text, owner.characters.count > 0,
-            let repo = repoTextField?.text, repo.characters.count > 0 else {
+        guard let owner = ownerTextField?.text, owner.count > 0,
+            let repo = repoTextField?.text, repo.count > 0 else {
             return
         }
 
