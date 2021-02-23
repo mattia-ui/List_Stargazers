@@ -64,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		464B086625E59874002C4485 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4612EFE025E5953D00615F0E /* StargazerTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		620165661F557F4800903C9C = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +96,7 @@
 				620165721F557F4800903C9C /* AppDelegate.swift */,
 				620165761F557F4800903C9C /* Main.storyboard */,
 				62CA84231F558AEB003636C3 /* Model */,
+				464B086625E59874002C4485 /* Cell */,
 				62E331A11F56092E00A49EFE /* ViewControllers */,
 				62E331A31F56099A00A49EFE /* Resources */,
 			);
@@ -117,7 +126,6 @@
 			children = (
 				620165741F557F4800903C9C /* SearchViewController.swift */,
 				62CA841F1F55822C003636C3 /* StargazersTableViewController.swift */,
-				4612EFE025E5953D00615F0E /* StargazerTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -188,7 +196,7 @@
 					};
 					62BC2ABA1F560AA80044F31D = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = TVE3XYL8J6;
+						DevelopmentTeam = RL6WJW484U;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6201656E1F557F4800903C9C;
 					};
@@ -431,7 +439,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVE3XYL8J6;
+				DEVELOPMENT_TEAM = RL6WJW484U;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "List StargazersTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -452,7 +460,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVE3XYL8J6;
+				DEVELOPMENT_TEAM = RL6WJW484U;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "List StargazersTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
