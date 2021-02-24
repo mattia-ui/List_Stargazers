@@ -14,12 +14,31 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var ownerTextField: UITextField?
     @IBOutlet weak var repoTextField: UITextField?
-
+    @IBOutlet weak var ownerLabel: UILabel!
+    @IBOutlet weak var repoLabel: UILabel!
+    
     @IBOutlet weak var searchButton: UIButton?
-
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.repoLabel.textColor = .black
+        self.ownerLabel.textColor = .black
+        self.welcomeLabel.textColor = .black
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+            view.addGestureRecognizer(tap)
+        
     }
+    
+    @IBAction func resetButton(_ sender: Any) {
+        self.ownerTextField?.text = ""
+        self.repoTextField?.text = ""
+    }
+    
 
     @IBAction func searchButtonTapped(_ sender: Any) {
         guard let owner = ownerTextField?.text, owner.count > 0,
@@ -65,6 +84,10 @@ class SearchViewController: UIViewController {
         }
         vc.items = items
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

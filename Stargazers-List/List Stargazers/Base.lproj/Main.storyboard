@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,13 +36,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENVENUTI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qog-XX-Jt4">
+                                <rect key="frame" x="149" y="134.66666666666666" width="100" height="20.333333333333343"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare il repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-8G-HQi">
+                                <rect key="frame" x="36" y="292" width="153" height="20.333333333333314"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare l'owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-pu-sQW">
+                                <rect key="frame" x="36" y="183" width="119" height="40"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="54e-Y6-hhz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Owner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-2p-dXG">
-                                <rect key="frame" x="36" y="233" width="181" height="34"/>
+                                <rect key="frame" x="36" y="231" width="180" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cec-an-5tw">
-                                <rect key="frame" x="36" y="492.33333333333326" width="318" height="50"/>
+                                <rect key="frame" x="36" y="478.33333333333331" width="318" height="49.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9Lr-Hj-SA5"/>
                                 </constraints>
@@ -51,35 +76,21 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-IY-YfF">
-                                <rect key="frame" x="36" y="345.33333333333331" width="181" height="34"/>
+                                <rect key="frame" x="36" y="331.33333333333331" width="180" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare l'owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-pu-sQW">
-                                <rect key="frame" x="36" y="183" width="119" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="54e-Y6-hhz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitare il repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-8G-HQi">
-                                <rect key="frame" x="36" y="306" width="152.66666666666666" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENVENUTI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qog-XX-Jt4">
-                                <rect key="frame" x="149" y="134" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N94-ut-MU4">
+                                <rect key="frame" x="36" y="547.33333333333337" width="318" height="52"/>
+                                <state key="normal" image="resetButton"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lB-wr-fpS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PtQ-8G-HQi" firstAttribute="top" secondItem="gMY-2p-dXG" secondAttribute="bottom" constant="39" id="0oe-oN-Ell"/>
+                            <constraint firstItem="PtQ-8G-HQi" firstAttribute="top" secondItem="gMY-2p-dXG" secondAttribute="bottom" constant="27" id="0oe-oN-Ell"/>
                             <constraint firstItem="qog-XX-Jt4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="10q-BG-h1s"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PtQ-8G-HQi" secondAttribute="trailing" constant="20" symbolic="YES" id="1vf-iZ-dfB"/>
                             <constraint firstItem="gOY-pu-sQW" firstAttribute="top" secondItem="qog-XX-Jt4" secondAttribute="bottom" constant="28" id="2yY-2Z-CZb"/>
@@ -88,22 +99,29 @@
                             <constraint firstItem="KKV-IY-YfF" firstAttribute="top" secondItem="PtQ-8G-HQi" secondAttribute="bottom" constant="19" id="DYm-CN-CVv"/>
                             <constraint firstItem="PtQ-8G-HQi" firstAttribute="leading" secondItem="gOY-pu-sQW" secondAttribute="leading" id="G5i-50-1dV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cec-an-5tw" secondAttribute="trailing" constant="20" id="LBj-gS-MlP"/>
-                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="gOY-pu-sQW" secondAttribute="bottom" constant="21" id="Q6d-yo-qrB"/>
+                            <constraint firstItem="N94-ut-MU4" firstAttribute="centerX" secondItem="qog-XX-Jt4" secondAttribute="centerX" constant="-4" id="MNw-n2-IYX"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="gOY-pu-sQW" secondAttribute="bottom" constant="8" id="Q6d-yo-qrB"/>
                             <constraint firstItem="cec-an-5tw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Rbu-F9-nvb"/>
-                            <constraint firstItem="qog-XX-Jt4" firstAttribute="centerX" secondItem="KKV-IY-YfF" secondAttribute="centerX" constant="69" id="TKz-1k-zXg"/>
-                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="233" id="Ubt-rz-I4N"/>
+                            <constraint firstItem="qog-XX-Jt4" firstAttribute="centerX" secondItem="KKV-IY-YfF" secondAttribute="centerX" constant="73" id="TKz-1k-zXg"/>
+                            <constraint firstItem="gMY-2p-dXG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="231" id="Ubt-rz-I4N"/>
                             <constraint firstItem="gMY-2p-dXG" firstAttribute="leading" secondItem="gOY-pu-sQW" secondAttribute="leading" id="W7S-RY-tPa"/>
                             <constraint firstItem="KKV-IY-YfF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="XdC-9k-wfX"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="KKV-IY-YfF" secondAttribute="trailing" id="b4u-kW-idt"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gOY-pu-sQW" secondAttribute="trailing" constant="20" symbolic="YES" id="fBC-oV-0Ir"/>
+                            <constraint firstItem="N94-ut-MU4" firstAttribute="trailing" secondItem="cec-an-5tw" secondAttribute="trailing" id="fwV-pR-fAL"/>
+                            <constraint firstItem="N94-ut-MU4" firstAttribute="top" secondItem="cec-an-5tw" secondAttribute="bottom" constant="19" id="hii-ZY-cX2"/>
                             <constraint firstItem="cec-an-5tw" firstAttribute="top" secondItem="KKV-IY-YfF" secondAttribute="bottom" constant="112.99999999999994" id="jat-k2-Jj7"/>
+                            <constraint firstItem="N94-ut-MU4" firstAttribute="leading" secondItem="cec-an-5tw" secondAttribute="leading" id="kHm-y7-P1T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="YBJ-TX-ore"/>
                     <connections>
+                        <outlet property="ownerLabel" destination="gOY-pu-sQW" id="TyE-hb-iKk"/>
                         <outlet property="ownerTextField" destination="gMY-2p-dXG" id="7Uj-TW-gg0"/>
+                        <outlet property="repoLabel" destination="PtQ-8G-HQi" id="gQB-UB-hfG"/>
                         <outlet property="repoTextField" destination="KKV-IY-YfF" id="76T-Nx-eT9"/>
                         <outlet property="searchButton" destination="cec-an-5tw" id="mCF-Y1-W17"/>
+                        <outlet property="welcomeLabel" destination="qog-XX-Jt4" id="RAi-we-Glx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,5 +186,9 @@
     </scenes>
     <resources>
         <image name="SearchButton" width="320" height="52"/>
+        <image name="resetButton" width="320" height="52"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
