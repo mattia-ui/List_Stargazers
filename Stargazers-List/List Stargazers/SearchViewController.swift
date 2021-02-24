@@ -16,7 +16,6 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var repoTextField: UITextField?
     @IBOutlet weak var ownerLabel: UILabel!
     @IBOutlet weak var repoLabel: UILabel!
-    
     @IBOutlet weak var searchButton: UIButton?
     @IBOutlet weak var welcomeLabel: UILabel!
     
