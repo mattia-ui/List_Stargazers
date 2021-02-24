@@ -3,6 +3,7 @@
 //  List Stargazers
 //
 //  Created by Mattia Cardone on 22/02/2021.
+//  Copyright © 2021 Mattia Cardone. All rights reserved.
 //
 
 import UIKit
